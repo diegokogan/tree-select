@@ -255,7 +255,6 @@ const Select = React.createClass({
       if (checkEvt) {
         // TODO treeCheckable does not support tags/dynamic
         let {checkedNodes} = info;
-        checkedNodes = checkedNodes.filter(n => !n.props.children);
         value = checkedNodes.map(n => getValuePropValue(n));
         label = checkedNodes.map(n => this.getLabelFromNode(n));
       } else {
